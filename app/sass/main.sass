@@ -1,0 +1,63 @@
+@import "vars"
+
+.rent
+	&-title
+		font-family: 'Cuprum', sans-serif
+		font-size: calc(20px + 14 * ((100vw - 320px)/ 790))
+		font-weight: bold
+		color: $black
+	&-content
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		margin-bottom: 50px
+		&__item
+			max-width: 383px
+			margin: 0 10px
+			img
+				max-width: 100%
+				height: auto
+
+.faq
+	&-block
+		margin-bottom: 50px
+		.block__item
+			padding: 24px 0
+			border-bottom: 1px solid $gray
+			&:last-child
+				border: none
+			.block__title
+				display: flex
+				justify-content: space-between
+				font-family: 'Cuprum', sans-serif
+				font-weight: bold
+				color: $black
+				cursor: pointer
+				user-select: none
+				img
+					width: 25px
+					height: 25px
+					background-color: $blue
+					border-radius: 50%
+			.active
+				img
+					background-color: $black
+					transition: all 0.5s ease 0s
+					transform: rotate(45deg)
+			.block__text
+				display: none
+				padding: 10px 0 0 0
+
+.cocktails
+	&-video
+		overflow: hidden
+		position: relative
+		padding-bottom: 56.25%
+		padding-top: 30px
+		height: 0
+		iframe
+			position: absolute
+			width: 100%
+			height: 100%
+			left: 0
+			top: 0

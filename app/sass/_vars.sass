@@ -1,0 +1,52 @@
+$white: #FFFFFF
+$black: #2B2A39
+$l-black: #52525B
+$gray: #B5B5B5
+$blue: #5C80FF
+
+*
+	box-sizing: border-box
+
+::selection
+	background: $white
+	color: $white
+
+body
+	font-family: 'Arsenal',sans-serif
+	font-size: calc(14px + 1 * ((100vw - 320px)/ 790))
+	line-height: 1.4
+	font-weight: 400
+	margin: 0
+	min-width: 320px
+	overflow-x: hidden
+	color: $l-black
+
+img
+	display: block
+	// max-width: 100%
+
+.wrapper-main
+	max-width: 1645px
+	padding: 0 15px
+	width: 100%
+	height: 100%
+	margin: 0 auto
+
+.wrapper
+	max-width: 790px
+	padding: 0 15px
+	width: 100%
+	height: 100%
+	margin: 0 auto
+
+.common-title
+	font-family: 'Cuprum', sans-serif
+	font-size: calc(20px + 4 * ((100vw - 320px)/ 790))
+	font-weight: bold
+	color: $black
+
+.common-header
+	font-family: 'Cuprum', sans-serif
+	font-size: calc(16px + 2 * ((100vw - 320px)/ 790))
+	font-weight: bold
+	color: $black
